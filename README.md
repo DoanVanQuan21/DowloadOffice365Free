@@ -1,0 +1,31 @@
+#DOWNLOAD OFFICE 365 FREE STEP BY STEP
+if you download repo you just create a folder Office365 in disk C and add all file on this repos in to folder Office365 and start excute at #STEP 4
+
+#STEP 1
+- Download office deployment tool at this "https://www.microsoft.com/en-us/download/details.aspx?id=49117"
+- create a new folder in disk D example "Office365"
+- Run file downloaded above in folder "Office365"
+#STEP 2
+- access folder Office365 and open file "configuration-office2021Enterprise" with notepad
+- Ctrl+A and Paste
+<Configuration>
+  <Add OfficeClientEdition="64"  Channel="PerpetualVL2024">
+     <Product ID="ProPlus2024Volume" PIDKEY="Y63J7-9RNDJ-GD3BV-BDKBP-HH966" >
+         <Language ID="en-us" />
+    </Product>
+  </Add>
+  <RemoveMSI />
+  <Property Name="AUTOACTIVATE" Value="1" />
+</Configuration>
+- Save as "configuration.xml"
+- remove all file but setup.application and configuration.xml
+#STEP 3
+- Copy folder "Office365" in to disk C
+- Click into folder "Office365" and copy path. Example C:\Office365
+#STEP 4
+- Press Window+R
+- Enter "cmd" keyword and press enter
+- Enter command "cd C:\Office365" and press enter
+- Enter command "setup.exe /configure configuration.xml" and press enter
+#FINALLY
+- After completing steps above. You just need to wait Office365 installed
